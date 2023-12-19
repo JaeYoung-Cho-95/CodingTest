@@ -50,7 +50,6 @@ def solution(maps):
         return -1
     return st_md + md_ed
 
-
 if __name__ == "__main__":
     print(solution(["SOOOL", "XXXXO", "OOOOO", "OXXXX", "OOOOE"]), 16)
     print(solution(["LOOXS", "OOOOX", "OOOOO", "OOOOO", "EOOOO"]), -1)
