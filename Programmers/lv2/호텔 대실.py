@@ -14,7 +14,7 @@ def solution(book_time):
 
         flag = True
         for index in range(len(rooms)):
-            if rooms[index] < st_time:
+            if rooms[index] <= st_time:
                 rooms.remove(rooms[index])
                 rooms.append(ed_time)
                 flag = False
@@ -28,14 +28,4 @@ def solution(book_time):
 
 
 if __name__ == "__main__":
-    print(
-        solution(
-            [
-                ["15:00", "17:00"],
-                ["16:40", "18:20"],
-                ["14:20", "15:20"],
-                ["14:10", "19:20"],
-                ["18:20", "21:20"],
-            ]
-        )
-    )
+    print(solution([["00:01", "00:10"], ["00:19", "00:29"]]))
