@@ -1,6 +1,5 @@
 def solution(X, Y):
     cnt_Y = {key: 0 for key in Y}
-
     for i in Y:
         cnt_Y[i] += 1
 
