@@ -1,7 +1,6 @@
 def solution(storey):
     from collections import deque
     storey = deque([int(x) for x in str(storey)[::-1]])
-    print(storey)
     
     answer = 0
     while storey:
@@ -28,15 +27,13 @@ def solution(storey):
                 answer += 1
         else:
             answer += temp
-        # print(f"answer : {answer}")
-        # print(f"storey : {storey}")
         
     return answer
 
 if __name__ == "__main__":
-    # print(solution(16))
-    # print(solution(2554))
-    # print(solution(1000000))
-    # print(solution(2999999))
+    print(solution(16))
+    print(solution(2554))
+    print(solution(1000000))
+    print(solution(2999999))
     print(solution(5999999))
     print(solution(35))
